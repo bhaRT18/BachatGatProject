@@ -1,25 +1,25 @@
 package model;
 import java.time.LocalDate;
-                               /*member class represents a womannparticipating in the bachat gat group
-                                * it holds personal details and financial summary related to the member.
-                                */
+/*member class represents a womannparticipating in the bachat gat group
+* it holds personal details and financial summary related to the member.
+*/
  public class Member{
-                              //personal information//
+//personal information//
  String memberName;
  String memberId;
  String mobileNumber;
  String address;
  LocalDate dteOfJoining;
  String aadharNumber;
-                                    //Monthly contribution detail//
- double monthlyContribution;
- double totalDeposit;
-                                       //Loan and repayment summary
- double loanTaken;
- double loanRepaid;
- double interestPaid;
- boolean isActive;
-                                       //constructor//
+//Monthly contribution detail
+ double monthlyContribution; //e.g 500 per month
+ double totalDeposit;        //total amount deposited by this member
+//Loan and repayment summary
+ double loanTaken;           //total loan taken so far
+ double loanRepaid;          //total repayment done by member
+ double interestPaid;        //total interst paid
+ boolean isActive;           //if member is the currently part of the group
+//constructor//
 public Member(String memberName, String memberId,String mobileNumber,String address,
 LocalDate dteOfJoining,String aadharNumber,double monthlyContribution,
 double totalDeposit,double loanTaken,double loanRepaid,double interestPaid,
